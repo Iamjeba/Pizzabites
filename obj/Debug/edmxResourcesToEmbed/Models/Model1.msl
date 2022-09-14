@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PizzabitesModelStoreContainer" CdmEntityContainer="PizzabitesEntities">
+    <EntitySetMapping Name="Comments">
+      <EntityTypeMapping TypeName="PizzabitesModel.Comment">
+        <MappingFragment StoreEntitySet="Comment">
+          <ScalarProperty Name="CommentID" ColumnName="CommentID" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="CustName" ColumnName="CustName" />
+          <ScalarProperty Name="CommentMessage" ColumnName="CommentMessage" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ContactUs">
+      <EntityTypeMapping TypeName="PizzabitesModel.ContactU">
+        <MappingFragment StoreEntitySet="ContactUs">
+          <ScalarProperty Name="ContactID" ColumnName="ContactID" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="ContactMessage" ColumnName="ContactMessage" />
+          <ScalarProperty Name="AdminReply" ColumnName="AdminReply" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Customers">
+      <EntityTypeMapping TypeName="PizzabitesModel.Customer">
+        <MappingFragment StoreEntitySet="Customer">
+          <ScalarProperty Name="CUSEmail" ColumnName="CUSEmail" />
+          <ScalarProperty Name="CUSName" ColumnName="CUSName" />
+          <ScalarProperty Name="CUSPassword" ColumnName="CUSPassword" />
+          <ScalarProperty Name="CUSContactNo" ColumnName="CUSContactNo" />
+          <ScalarProperty Name="CUSAddress" ColumnName="CUSAddress" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderLists">
+      <EntityTypeMapping TypeName="PizzabitesModel.OrderList">
+        <MappingFragment StoreEntitySet="OrderList">
+          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+          <ScalarProperty Name="itemName" ColumnName="itemName" />
+          <ScalarProperty Name="totalPrice" ColumnName="totalPrice" />
+          <ScalarProperty Name="cusEmail" ColumnName="cusEmail" />
+          <ScalarProperty Name="cusAddress" ColumnName="cusAddress" />
+          <ScalarProperty Name="orderDate" ColumnName="orderDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Products">
+      <EntityTypeMapping TypeName="PizzabitesModel.Product">
+        <MappingFragment StoreEntitySet="Product">
+          <ScalarProperty Name="PRID" ColumnName="PRID" />
+          <ScalarProperty Name="PRName" ColumnName="PRName" />
+          <ScalarProperty Name="PRImage" ColumnName="PRImage" />
+          <ScalarProperty Name="PRType" ColumnName="PRType" />
+          <ScalarProperty Name="PRDescription" ColumnName="PRDescription" />
+          <ScalarProperty Name="PRPrize" ColumnName="PRPrize" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
